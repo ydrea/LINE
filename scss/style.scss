@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+.container {
+  max-width: 1700px;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+}
+
+$lightC: rgb(252, 252, 185);
+$darkC: rgb(6, 0, 14);
+$oranje: darkorange;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 30%;
+  font-weight: 700;
+  font-size: larger;
+  cursor: pointer;
+  color: $oranje;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  h2 {
+    color: $oranje;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    color: $oranje;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  background-color: $darkC;
+  color: $lightC;
+  font-size: 18px;
+  line-height: 1.6;
+
+  h1 {
+    color: $lightC;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: none;
+  }
+}
+
+a {
+  color: $lightC;
+  text-decoration: underline;
+  text-size-adjust: +40%;
+}
+
+a:hover {
+  color: $oranje;
+}
+
+.hidden {
+  display: none;
+}
+
+.wb-body {
+  background: $darkC;
+  padding: 20px;
+}
+
+.cursor {
+  font-weight: 700;
+  font-size: smaller;
+  vertical-align: 10%;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: $darkC;
+  }
+  50% {
+    color: $oranje;
+  }
+}
